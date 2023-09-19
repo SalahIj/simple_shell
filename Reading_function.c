@@ -11,7 +11,7 @@ char *Reading_function(void)
 	size_t size = 0;
 	ssize_t n_chars;
 
-	n_chars = _getline(&buffer, &size, 0);
+	n_chars = getline(&buffer, &size, stdin);
 	if (n_chars == -1)
 	{
 		free(buffer);

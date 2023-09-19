@@ -18,14 +18,14 @@ char **Spliting_function(char *buffer, char *delemiter)
 		perror("malloc");
 		exit(EXIT_FAILURE);
 	}
-	token = strtok(buffer, delemiter);
+	token = _strtok(buffer, delemiter);
 	while (token != NULL)
 	{
 		if (token[0] == '#')
 			break;
 
 		array[i] = token;
-		token = strtok(NULL, delemiter);
+		token = _strtok(NULL, delemiter);
 		i++;
 	}
 	array[i] = NULL;

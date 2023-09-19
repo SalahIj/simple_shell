@@ -38,6 +38,7 @@ int _getchar(void);
 ssize_t _getline(char **buffer, size_t *n, int fd);
 int _fgetc(int fd);
 void Error_printing(char **array);
+char *_strtok(char *str, char *del);
 
 #endif
 
